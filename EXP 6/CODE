@@ -1,1 +1,19 @@
+room = {'A': 1, 'B': 1}
+position = 'A'
+
+while 1:
+    print("Room", position)
+
+    if room[position] == 1:
+        print("Suck dirt")
+        room[position] = 0
+
+    if position == 'A':
+        position = 'B'
+    else:
+        position = 'A'
+
+    if room['A'] == 0 and room['B'] == 0:
+        print("All rooms are clean")
+        break
 
